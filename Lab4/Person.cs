@@ -54,13 +54,13 @@ namespace Lab4
 
             // compute distance between first letters of first name
 
-            char c = 'W';
-            char d = 'K';
+            char c = FirstName[0];
+            char d = other.FirstName[0];
 
-            int difference = Math.Abs( c - d );
+            int difference = Math.Abs( char.ToUpper(c) - char.ToUpper(d) );
 
 
-            return 1;
+            return difference;
         }
 
 
